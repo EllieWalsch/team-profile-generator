@@ -53,3 +53,12 @@ const generateEngineerHTML = (engineerArr) => {
 
   return engineerHTML;
 };
+
+export const generateTeamHTML = ({ managerArr, engineerArr, internArr }) => {
+  const teamHTML = [];
+  teamHTML.push(generateManagerHTML(managerArr));
+  teamHTML.push(generateInternHTML(internArr));
+  teamHTML.push(generateEngineerHTML(engineerArr));
+
+  return teamHTML.join("");
+};
