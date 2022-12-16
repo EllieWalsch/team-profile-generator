@@ -54,11 +54,36 @@ const generateEngineerHTML = (engineerArr) => {
   return engineerHTML;
 };
 
-export const generateTeamHTML = ({ managerArr, engineerArr, internArr }) => {
-  const teamHTML = [];
-  teamHTML.push(generateManagerHTML(managerArr));
-  teamHTML.push(generateInternHTML(internArr));
-  teamHTML.push(generateEngineerHTML(engineerArr));
+const generateCardsHTML = ({ managerArr, engineerArr, internArr }) => {
+  const cardsHTML = [];
+  cardsHTML.push(generateManagerHTML(managerArr));
+  cardsHTML.push(generateInternHTML(internArr));
+  cardsHTML.push(generateEngineerHTML(engineerArr));
 
-  return teamHTML.join("");
+  return cardsHTML.join("");
 };
+
+export const generateTeamHTML = (team) => `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>My Team</title>
+</head>
+<body>
+  <header class="bg-danger p-5">
+    <h1 class="text-center text-white">My Team</h1>
+  </header>
+
+  <div class="container d-flex flex-row p-0" style="width: 100%;">
+    ${generateCardsHTML(team)}
+  </div>
+</body>
+</html>
+`;
