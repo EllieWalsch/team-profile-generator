@@ -12,9 +12,9 @@ First, download the repo. Then open the terminal and make sure you're in the "te
 
 ## Usage
 
-In the terminal, type "node index.js" and answer the following prompts. After all team members are added, click "I don't want to add more team members." This will generate a HTML file that can then be deployed or opened with a live server. [Click here for a walkthrough video.]()
+In the terminal, type "node index.js" and answer the following prompts. After all team members are added, click "I don't want to add more team members." This will generate a HTML file that can then be deployed or opened with a live server. [Click here for a walkthrough video.](https://drive.google.com/file/d/1_ymbGrGVidq-Jd_yByeYzNFYnBreX0Yk/view)
 
-![Screenshot of generated team profile]()
+![Screenshot of generated team profile](./images/generated-team.png)
 
 ## Credits
 
