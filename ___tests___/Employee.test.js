@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { Employee } from "../lib/Employee";
+import { Employee } from "../lib/Employee.js";
 
 it("Should create a new name", () => {
   const name = "Ellie";

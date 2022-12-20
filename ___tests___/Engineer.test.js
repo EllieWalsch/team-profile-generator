@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { Engineer } from "../lib/Engineer";
+import { Engineer } from "../lib/Engineer.js";
 
 it("Should create a new Github username", () => {
   const github = "username";
