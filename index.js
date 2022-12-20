@@ -1,8 +1,5 @@
 import Team from "./lib/Team.js";
-
-// TODO: move index to src
-// TODO: add role and icons
-// all code is in generatedHTML
+import fs from "fs";
 
 const team = new Team();
 
@@ -108,4 +105,6 @@ function generateTeamHTML() {
   `;
 }
 
-console.log(generateTeamHTML());
+console.log("Complete!");
+
+fs.writeFileSync("generatedHTML.html", generateTeamHTML());
