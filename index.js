@@ -15,8 +15,9 @@ function generateManagerHTML() {
         <h3 class="card-title bg-primary p-3 text-white text-center">${team.managers[0].name}</h3>
         <ul class="list-group list-group-flush">
         <li class="list-group-item">Role: Manager</li>
-        <li class="list-group-item">Email:</li>
+        <li class="list-group-item">Email:
           <a href="mailto:${team.managers[0].email}">${team.managers[0].email}</a>
+        </li>
         <li class="list-group-item">ID: ${team.managers[0].id}</li>
         <li class="list-group-item">Office Number: ${team.managers[0].officeNumber}</li>
       </ul>
@@ -33,8 +34,9 @@ function generateInternHTML() {
           <h3 class="card-title bg-primary p-3 text-white text-center">${team.interns[i].name}</h3>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Role: Intern</li>
-            <li class="list-group-item">Email:</li>
+            <li class="list-group-item">Email:
               <a href="mailto:${team.interns[i].email}">${team.interns[i].email}</a>
+            </li>
             <li class="list-group-item">ID: ${team.interns[i].id}</li>
             <li class="list-group-item">School: ${team.interns[i].school}</li>
           </ul>
@@ -55,8 +57,9 @@ function generateEngineerHTML() {
           <h3 class="card-title bg-primary p-3 text-white text-center">${team.engineers[i].name}</h3>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Role: Engineer</li>
-            <li class="list-group-item">Email:</li>
+            <li class="list-group-item">Email:
               <a href="mailto:${team.engineers[i].email}">${team.engineers[i].email}</a>
+            </li>
             <li class="list-group-item">ID: ${team.engineers[i].id}</li>
             <li class="list-group-item">Github:
               <a href="https://github.com/${team.engineers[i].github}/" target="_blank">${team.engineers[i].github}</a>
